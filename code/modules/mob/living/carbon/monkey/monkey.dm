@@ -607,7 +607,7 @@
 	..()
 
 /mob/living/carbon/monkey/ex_act(severity)
-	flash_eyes()
+	flick("flash", flash)
 	switch(severity)
 		if(1.0)
 			if (stat != 2)

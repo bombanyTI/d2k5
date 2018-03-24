@@ -23,7 +23,7 @@
 		//reagents.handle_reactions() //No magic stomach for corpses.
 		canmove = 0
 		if(src.client)
-			clear_fullscreen("blind")
+			src.blind.layer = 0
 		lying = 1
 		var/h = src.hand
 		hand = 0
@@ -88,11 +88,11 @@
 					cancel = 1
 					break
 
-			/*if (!cancel && !abandon_allowed)
+			if (!cancel && !abandon_allowed)
 				world << "<B>Everyone is dead! Resetting in 30 seconds!</B>"
 
 				spawn (300)
 					log_game("Rebooting because of no live players")
 					world.Reboot()
-				*/
+
 	return ..(gibbed)

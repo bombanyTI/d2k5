@@ -79,10 +79,10 @@
 
 		O.weakened = src.strength
 		if ((O.eye_stat > 15 && prob(O.eye_stat + 50)))
-			O.flash_eyes()
+			flick("e_flash", O:flash)
 			O.eye_stat += rand(1, 2)
 		else
-			O.flash_eyes()
+			flick("flash", O:flash)
 			O.eye_stat += rand(0, 2)
 
 

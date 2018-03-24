@@ -187,7 +187,7 @@
 	..()
 
 /mob/living/carbon/alien/humanoid/ex_act(severity)
-	flash_eyes()
+	flick("flash", flash)
 
 	if (stat == 2 && client)
 		gib(1)

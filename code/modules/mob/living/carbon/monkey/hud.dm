@@ -429,6 +429,19 @@
 	mymob.pullin.name = "pull"
 	mymob.pullin.screen_loc = ui_pull
 
+	mymob.blind = new /obj/screen( null )
+	mymob.blind.icon = ui_style
+	mymob.blind.icon_state = "black"
+	mymob.blind.name = " "
+	mymob.blind.screen_loc = "1,1 to 13,13"
+	mymob.blind.layer = 0
+
+	mymob.flash = new /obj/screen( null )
+	mymob.flash.icon = ui_style
+	mymob.flash.icon_state = "blank"
+	mymob.flash.name = "flash"
+	mymob.flash.screen_loc = "1,1 to 13,13"
+	mymob.flash.layer = 17
 
 	mymob.hands = new /obj/screen( null )
 	mymob.hands.icon = ui_style
@@ -544,7 +557,7 @@
 	mymob.client.screen = null
 
 	//, mymob.i_select, mymob.m_select
-	mymob.client.screen += list( mymob.throw_icon, mymob.zone_sel, mymob.oxygen, mymob.toxin, mymob.bodytemp, mymob.internals, mymob.fire, mymob.hands, mymob.healths, mymob.pullin,mymob.rest, mymob.sleep) //, mymob.mach )
+	mymob.client.screen += list( mymob.throw_icon, mymob.zone_sel, mymob.oxygen, mymob.toxin, mymob.bodytemp, mymob.internals, mymob.fire, mymob.hands, mymob.healths, mymob.pullin, mymob.blind, mymob.flash, mymob.rest, mymob.sleep) //, mymob.mach )
 	mymob.client.screen += src.adding + src.other
 
 	//if(istype(mymob,/mob/living/carbon/monkey)) mymob.client.screen += src.mon_blo

@@ -43,7 +43,7 @@
 	src.stat = 2
 	src.canmove = 0
 	if(src.blind)
-		clear_fullscreen("blind")
+		src.blind.layer = 0
 	src.sight |= SEE_TURFS
 	src.sight |= SEE_MOBS
 	src.sight |= SEE_OBJS
@@ -152,7 +152,7 @@
 	src.blind.icon_state = "black"
 	src.blind.name = " "
 	src.blind.screen_loc = "1,1 to 17,17"
-	clear_fullscreen("blind")
+	src.blind.layer = 0
 	src.client.screen += list( src.blind, src.flash )
 	if(!isturf(src.loc))
 		src.client.eye = src.loc

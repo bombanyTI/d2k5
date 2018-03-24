@@ -217,7 +217,7 @@
 	return 0
 
 /mob/living/silicon/robot/ex_act(severity)
-	flash_eyes()
+	flick("flash", flash)
 
 	if (stat == 2 && client)
 		gib(1)

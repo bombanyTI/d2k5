@@ -21,7 +21,7 @@
 	src.stat = 2
 	src.canmove = 0
 	if (src.blind)
-		clear_fullscreen("blind")
+		src.blind.layer = 0
 	src.lying = 1
 	src.icon_state = "baby metroid dead"
 

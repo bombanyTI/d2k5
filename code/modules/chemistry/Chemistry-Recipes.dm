@@ -631,7 +631,7 @@ datum
 								if(istype(M:glasses, /obj/item/clothing/glasses/sunglasses))
 									continue
 
-							M.flash_eyes()
+							flick("e_flash", M.flash)
 							M.weakened = 15
 
 						if(4 to 5)
@@ -639,7 +639,7 @@ datum
 								if(istype(M:glasses, /obj/item/clothing/glasses/sunglasses))
 									continue
 
-							M.flash_eyes()
+							flick("e_flash", M.flash)
 							M.stunned = 5
 
 		napalm

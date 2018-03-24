@@ -459,7 +459,7 @@
 	return
 
 /mob/living/carbon/human/ex_act(severity)
-	flash_eyes()
+	flick("flash", flash)
 
 	if (stat == 2 && client)
 		gib(1)

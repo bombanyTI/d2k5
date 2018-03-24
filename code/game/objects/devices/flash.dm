@@ -43,10 +43,10 @@
 						user << "\red The bulb has burnt out!"
 						return
 					if ((M.eye_stat > 15 && prob(M.eye_stat + 50)))
-						M.flash_eyes()
+						flick("e_flash", M.flash)
 						M.eye_stat += rand(1, 2)
 					else
-						M.flash_eyes()
+						flick("flash", M.flash)
 						M.eye_stat += rand(0, 2)
 					if (M.eye_stat >= 20)
 						M << "\red You eyes start to burn badly!"
@@ -118,7 +118,7 @@
 				if (istype(M, /mob/living/carbon/alien))//So aliens don't see those annoying flash screens.
 					safety = 1
 				if (!( safety ))
-					M.flash_eyes()
+					flick("flash", M.flash)
 
 /obj/item/device/flash/emp_act(severity)
 	src.attack_self(null,1,1)

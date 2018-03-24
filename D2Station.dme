@@ -716,7 +716,6 @@
 #include "code\modules\mob\living\carbon\human\dismemberment.dm"
 #include "code\modules\mob\living\carbon\human\examine.dm"
 #include "code\modules\mob\living\carbon\human\hud.dm"
-#include "code\modules\mob\living\carbon\human\hud_fullscreen.dm"
 #include "code\modules\mob\living\carbon\human\human.dm"
 #include "code\modules\mob\living\carbon\human\life.dm"
 #include "code\modules\mob\living\carbon\human\login.dm"

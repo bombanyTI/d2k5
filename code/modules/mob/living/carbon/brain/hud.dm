@@ -21,3 +21,10 @@
 	druggy.icon_state = "druggy"
 	druggy.layer = 17
 	druggy.mouse_opacity = 0
+
+	mymob.blind = new /obj/screen( null )
+	mymob.blind.icon = ui_style
+	mymob.blind.icon_state = "black"
+	mymob.blind.name = " "
+	mymob.blind.screen_loc = "1,1 to 17,17"
+	mymob.blind.layer = 0

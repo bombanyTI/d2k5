@@ -163,7 +163,7 @@ proc/explosion(turf/epicenter, devastation_range, heavy_impact_range, light_impa
 					object.ex_act(3)
 				T.ex_act(3)
 			for(var/mob/living/carbon/mob in T)
-				mob.flash_eyes()
+				flick("flash", mob:flash)
 
 		defer_powernet_rebuild = 0
 	return 1
