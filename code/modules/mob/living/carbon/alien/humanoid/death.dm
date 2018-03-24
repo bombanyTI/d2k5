@@ -13,7 +13,7 @@
 
 		src.canmove = 0
 		if(src.client)
-			src.blind.layer = 0
+			clear_fullscreen("blind")
 		src.lying = 1
 		var/h = src.hand
 		src.hand = 0

@@ -107,7 +107,7 @@ FLASHBANG
 				S.active = 0
 				S.icon_state = "shield0"
 		if ((get_dist(M, T) <= 2 || src.loc == M.loc || src.loc == M))
-			flick("e_flash", M.flash)
+			M.flash_eyes()
 			if(!(M.mutations & HULK))  M.stunned = 10
 			if(!(M.mutations & HULK))  M.weakened = 3
 			M << "\red <B>BANG</B>"
@@ -134,7 +134,7 @@ FLASHBANG
 						M.ear_deaf += 60
 		else
 			if (get_dist(M, T) <= 5)
-				flick("e_flash", M.flash)
+				M.flash_eyes()
 				if (!( istype(M, /mob/living/carbon/human) ))
 					if(!(M.mutations & HULK))  M.stunned = 7
 					if(!(M.mutations & HULK))  M.weakened = 2
@@ -159,7 +159,7 @@ FLASHBANG
 				M << "\red <B>BANG</B>"
 			else
 				if (!( istype(M, /mob/living/carbon/human) ))
-					flick("flash", M.flash)
+					M.flash_eyes()
 				else
 					var/mob/living/carbon/human/H = M
 					var/safe = 0
@@ -169,7 +169,7 @@ FLASHBANG
 						if(!H.head:up)
 							safe = 1
 					if(!safe)
-						flick("flash", M.flash)
+						M.flash_eyes()
 				M.eye_stat += rand(1, 2)
 				M.ear_deaf += 5
 				M << "\red <B>BANG</B>"

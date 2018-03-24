@@ -81,7 +81,7 @@
 			src << "<font color=green>You feel an electric surge run through your circuitry and become acutely aware at how lucky you are that you can still feel at all.</font>"
 
 /mob/living/silicon/pai/ex_act(severity)
-	flick("flash", src.flash)
+	src.flash_eyes()
 
 	var/b_loss = src.bruteloss
 	var/f_loss = src.fireloss

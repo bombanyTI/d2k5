@@ -11,7 +11,7 @@
 	src.stat = 2
 	src.canmove = 0
 	if (src.blind)
-		src.blind.layer = 0
+		clear_fullscreen("blind")
 	src.lying = 1
 
 	var/h = src.hand

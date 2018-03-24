@@ -208,7 +208,7 @@
 	..()
 
 /mob/living/silicon/ai/ex_act(severity)
-	flick("flash", flash)
+	flash_eyes()
 
 	var/b_loss = bruteloss
 	var/f_loss = fireloss

@@ -506,7 +506,7 @@
 	..()
 
 /mob/living/carbon/human/ex_act(severity)
-	flick("flash", flash)
+	flash_eyes()
 
 // /obj/item/clothing/suit/bomb_suit( src )
 // /obj/item/clothing/head/bomb_hood( src )

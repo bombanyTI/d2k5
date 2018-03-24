@@ -516,7 +516,7 @@
 				if ((src.blinded))
 					src.blind.layer = 18
 				else
-					src.blind.layer = 0
+					clear_fullscreen("blind")
 
 					if (src.disabilities & 1)
 						src.client.screen += src.hud_used.vimpaired

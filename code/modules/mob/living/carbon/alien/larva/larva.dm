@@ -160,7 +160,7 @@
 
 
 /mob/living/carbon/alien/larva/ex_act(severity)
-	flick("flash", flash)
+	flash_eyes()
 
 	if (stat == 2 && client)
 		gib(1)

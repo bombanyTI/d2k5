@@ -12,7 +12,7 @@
 		RC.go_out()
 
 	if(src.blind)
-		src.blind.layer = 0
+		clear_fullscreen("blind")
 	src.sight |= SEE_TURFS
 	src.sight |= SEE_MOBS
 	src.sight |= SEE_OBJS

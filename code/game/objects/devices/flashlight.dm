@@ -104,7 +104,7 @@
 				if(M!=user)
 					user.show_message(text("\red [] pupils give an eerie glow!", M),1)
 			else //nothing wrong
-				flick("flash", M.flash)//flash the affected mob
+				M.flash_eyes()//flash the affected mob
 				if(M!=user)
 					user.show_message(text("\blue [] pupils narrow", M),1)
 	else

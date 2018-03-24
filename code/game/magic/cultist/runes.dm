@@ -905,7 +905,7 @@ var/list/sacrificed = list()
 			if(istype(src,/obj/rune))   ///When invoked as rune, flash and stun everyone around.
 				usr.say("Fuu ma'jin!")
 				for(var/mob/living/carbon/C in viewers(src))
-					flick("e_flash", C.flash)
+					C.flash_eyes()
 					if (C.weakened < 1 && (!(C.mutations & HULK)))  //Copied this off baton code
 						C.weakened = 1
 					if (C.stuttering < 1 && (!(C.mutations & HULK)))
@@ -918,7 +918,7 @@ var/list/sacrificed = list()
 				usr.say("Dream sign ''Evil sealing talisman''!")
 				for(var/mob/O in viewers(T, null))
 					O.show_message(text("\red <B>[] invokes a talisman at []</B>", usr, T), 1)
-				flick("e_flash", T.flash)
+				T.flash_eyes()
 				if (!(T.mutations & HULK))
 					T.silent += 15
 				if (!(T.mutations & HULK))
