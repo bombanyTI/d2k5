@@ -100,7 +100,7 @@
 	set category = "AI Commands"
 	set name = "State Laws"
 
-	var/list = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><b>Which laws do you want to include when stating them for the crew?</b><br><br>"
+	var/list = "<b>Which laws do you want to include when stating them for the crew?</b><br><br>"
 
 
 

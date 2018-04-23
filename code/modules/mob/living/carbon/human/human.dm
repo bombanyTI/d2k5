@@ -3022,7 +3022,7 @@ It can still be worn/put on as normal.
 
 	user.machine = src
 	var/dat = {"
-	<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><B><HR><FONT size=3>[name]</FONT></B>
+	<B><HR><FONT size=3>[name]</FONT></B>
 	<BR><HR>
 	<BR><B>Head(Mask):</B> <A href='?src=\ref[src];item=mask'>[(wear_mask ? wear_mask : "<font color=red>Nothing</font>")]</A>
 	<BR><B>Left Hand:</B> <A href='?src=\ref[src];item=l_hand'>[(l_hand ? l_hand  : "<font color=red>Nothing</font>")]</A>

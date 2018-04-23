@@ -88,7 +88,7 @@ var/songsText2 = ""
 		locktimer()
 
 /obj/machinery/party/piano/attack_hand(mob/user as mob)
-	var/t = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><B>Jukebox Interface</B><br>Protip: CTRL+F for search feature.<br><br>"
+	var/t = "<B>Jukebox Interface</B><br>Protip: CTRL+F for search feature.<br><br>"
 	if (src.mode == 0)
 		t += "<B>Off</B> "
 	else

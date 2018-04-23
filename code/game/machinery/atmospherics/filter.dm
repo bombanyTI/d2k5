@@ -339,7 +339,7 @@ obj/machinery/atmospherics/filter/attack_hand(user as mob) // -- TLE
 			current_filter_type = "ERROR - Report this bug to the admin, please!"
 
 	dat += {"
-			<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' />
+
 			<b>Power: </b><a href='?src=\ref[src];power=1'>[on?"On":"Off"]</a><br>
 			<b>Filtering: </b>[current_filter_type]<br><HR>
 			<h4>Set Filter Type:</h4>
@@ -362,7 +362,7 @@ obj/machinery/atmospherics/filter/attack_hand(user as mob) // -- TLE
 	//else
 	//	src.on != src.on
 */
-	user << browse("<HEAD><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><TITLE>[src.name] control</TITLE></HEAD><TT>[dat]</TT>", "window=atmo_filter")
+	user << browse("<HEAD><TITLE>[src.name] control</TITLE></HEAD><TT>[dat]</TT>", "window=atmo_filter")
 	onclose(user, "atmo_filter")
 	return
 

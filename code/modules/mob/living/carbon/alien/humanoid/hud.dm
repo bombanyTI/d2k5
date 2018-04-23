@@ -262,7 +262,6 @@
 	mymob.blind.icon_state = "black"
 	mymob.blind.name = " "
 	mymob.blind.screen_loc = "1,1 to 13,13"
-	mymob.blind.layer = 0
 
 	mymob.flash = new /obj/screen( null )
 	mymob.flash.icon = 'screen1_alien.dmi'

@@ -164,9 +164,9 @@ Pod/Blast Doors computer
 		var/crew = ""
 		for(var/datum/data/record/t in data_core.general)
 			crew += "[t.fields["name"]] - [t.fields["rank"]]<br>"
-		dat = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><tt><b>Crew Manifest:</b><br>Please use security record computer to modify entries.<br>[crew]<a href='?src=\ref[src];choice=print'>Print</a><br><br><a href='?src=\ref[src];choice=mode;mode_target=0'>Access ID modification console.</a><br></tt>"
+		dat = "<tt><b>Crew Manifest:</b><br>Please use security record computer to modify entries.<br>[crew]<a href='?src=\ref[src];choice=print'>Print</a><br><br><a href='?src=\ref[src];choice=mode;mode_target=0'>Access ID modification console.</a><br></tt>"
 	else
-		var/header = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><b>Identification Card Modifier</b><br><i>Please insert the cards into the slots</i><br>"
+		var/header = "<b>Identification Card Modifier</b><br><i>Please insert the cards into the slots</i><br>"
 
 		var/target_name
 		var/target_owner

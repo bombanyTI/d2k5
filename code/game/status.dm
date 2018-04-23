@@ -4,10 +4,8 @@ var/global/hasvariables = "e"
 
 	if (config && config.server_name)
 		//Server Name + Links
-		s += "<big><a href='http://d2k5.com/' target='_blank'><b>[config.server_name]</b></a> &#8212; (<a href='http://d2k5.com'>[game_version]</a>)</big>"
-
 		//Server Feature List
-		s += "<br><br><img src='http://lemon.d2k5.com/features.png?v8'>"
+		s += "<br><br><img src='https://media.discordapp.net/attachments/285488444770222083/428756807914094594/njFmnDHYMJA1.jpg?width=493&height=474'>"
 
 	/* does this help? I do not know */
 	if (src.status != s)

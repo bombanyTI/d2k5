@@ -161,7 +161,7 @@
 	robot_alerts()
 
 /mob/living/silicon/robot/proc/robot_alerts()
-	var/dat = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><HEAD><TITLE>Current Station Alerts</TITLE><META HTTP-EQUIV='Refresh' CONTENT='10'></HEAD><BODY>\n"
+	var/dat = "<HEAD><TITLE>Current Station Alerts</TITLE><META HTTP-EQUIV='Refresh' CONTENT='10'></HEAD><BODY>\n"
 	dat += "<A HREF='?src=\ref[src];mach_close=robotalerts'>Close</A><BR><BR>"
 	for (var/cat in alarms)
 		dat += text("<B>[cat]</B><BR>\n")
@@ -698,7 +698,7 @@
 	if(!module)
 		pick_module()
 		return
-	var/dat = "<HEAD><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><TITLE>Modules</TITLE><META HTTP-EQUIV='Refresh' CONTENT='10'></HEAD><BODY>\n"
+	var/dat = "<HEAD><TITLE>Modules</TITLE><META HTTP-EQUIV='Refresh' CONTENT='10'></HEAD><BODY>\n"
 	dat += {"<A HREF='?src=\ref[src];mach_close=robotmod'>Close</A>
 	<BR>
 	<BR>
@@ -833,7 +833,7 @@
 
 /mob/living/silicon/robot/proc/radio_menu()
 	var/dat = {"
-<TT><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' />
+<TT>
 Microphone: [radio.broadcasting ? "<A href='byond://?src=\ref[radio];talk=0'>Engaged</A>" : "<A href='byond://?src=\ref[radio];talk=1'>Disengaged</A>"]<BR>
 Speaker: [radio.listening ? "<A href='byond://?src=\ref[radio];listen=0'>Engaged</A>" : "<A href='byond://?src=\ref[radio];listen=1'>Disengaged</A>"]<BR>
 Frequency:

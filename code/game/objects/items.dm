@@ -270,7 +270,7 @@
 
 /obj/item/weapon/teleportation_scroll/attack_self(mob/user as mob)
 	user.machine = src
-	var/dat = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><B>Teleportation Scroll:</B><BR>"
+	var/dat = "<B>Teleportation Scroll:</B><BR>"
 	dat += "Number of uses: [src.uses]<BR>"
 	dat += "<HR>"
 	dat += "<B>Four uses use them wisely:</B><BR>"

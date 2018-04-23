@@ -120,7 +120,7 @@
 	if(stat & (BROKEN|NOPOWER))
 		return
 
-	var/dat = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><h3>Cloning System Control</h3>"
+	var/dat = "<h3>Cloning System Control</h3>"
 	dat += "<font size=-1><a href='byond://?src=\ref[src];refresh=1'>Refresh</a></font>"
 
 	dat += "<br><tt>[temp]</tt><br>"

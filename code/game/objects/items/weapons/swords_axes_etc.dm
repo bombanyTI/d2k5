@@ -69,7 +69,7 @@ STUN BATON
 	del(src)
 	return
 
-/obj/item/weapon/melee/energy/blade/proc/throw()
+/obj/item/weapon/melee/energy/blade/proc/Throw()
 	del(src)
 	return
 

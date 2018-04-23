@@ -105,7 +105,7 @@ mob/new_player
 		new_player_panel()
 			set src = usr
 
-			var/output = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><HR><B>New Player Options</B><BR>"
+			var/output = "<HR><B>New Player Options</B><BR>"
 			output += "<HR><br><a href='byond://?src=\ref[src];show_preferences=1'>Setup Character</A><BR><BR>"
 			if(!ticker || ticker.current_state <= GAME_STATE_PREGAME)
 				if(!ready)

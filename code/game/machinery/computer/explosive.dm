@@ -68,7 +68,7 @@
 		return
 	user.machine = src
 	var/dat
-	dat += "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><B>Prisoner Implant Manager System</B><BR>"
+	dat += "<B>Prisoner Implant Manager System</B><BR>"
 	if(screen == 0)
 		dat += "<HR><A href='?src=\ref[src];lock=1'>Unlock Console</A>"
 	else if(screen == 1)

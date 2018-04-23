@@ -165,7 +165,7 @@
 	usr.client.showvote = 1
 
 
-	var/text = "<HTML><HEAD><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><TITLE>Voting</TITLE></HEAD><BODY scroll=no>"
+	var/text = "<HTML><HEAD><TITLE>Voting</TITLE></HEAD><BODY scroll=no>"
 
 	var/footer = "<HR><A href='?src=\ref[vote];voter=\ref[src];vclose=1'>Close</A></BODY></HTML>"
 

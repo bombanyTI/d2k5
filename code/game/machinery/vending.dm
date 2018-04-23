@@ -141,7 +141,7 @@
 			"Goldenrod" = 3,
 			"Green" = 4,
 		)
-		var/pdat = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><B>Access Panel</B><br>"
+		var/pdat = "<B>Access Panel</B><br>"
 		for(var/wiredesc in vendwires)
 			var/is_uncut = src.wires & APCWireColorToFlag[vendwires[wiredesc]]
 			pdat += "[wiredesc] wire: "
@@ -161,7 +161,7 @@
 		user << browse(pdat, "window=vendwires")
 		onclose(user, "vendwires")
 
-	var/dat = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><body style='margin: 0; padding: 0;'>"
+	var/dat = "<body style='margin: 0; padding: 0;'>"
 
 	if (src.product_records.len == 0)
 		dat += "<font color = 'red'>No product loaded!</font>"

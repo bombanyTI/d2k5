@@ -32,7 +32,7 @@ client
 
 		body += "</ol>"
 
-		var/html = "<html><head><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' />"
+		var/html = "<html><head>"
 		if (title)
 			html += "<title>[title]</title>"
 		html += {"<style>

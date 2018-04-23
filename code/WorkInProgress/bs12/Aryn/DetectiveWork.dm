@@ -74,7 +74,7 @@ obj/machinery/computer/forensic_scanning
 		if(..())
 			return
 		user.machine = src
-		var/dat = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' />"
+		var/dat = ""
 		var/isai = 0
 		if(istype(usr,/mob/living/silicon))
 			isai = 1

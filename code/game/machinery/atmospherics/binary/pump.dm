@@ -104,7 +104,7 @@ obj/machinery/atmospherics/binary/pump
 			return 1
 
 		interact(mob/user as mob)
-			var/dat = {"<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><b>Power: </b><a href='?src=\ref[src];power=1'>[on?"On":"Off"]</a><br>
+			var/dat = {"<b>Power: </b><a href='?src=\ref[src];power=1'>[on?"On":"Off"]</a><br>
 						<b>Desirable output pressure: </b>
 						[round(target_pressure,0.1)]kPa | <a href='?src=\ref[src];set_press=1'>Change</a>
 						"}

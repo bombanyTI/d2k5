@@ -157,9 +157,9 @@ alarm may take up the position of master at any point.
 
 /obj/machinery/alarm/proc/return_text()
 	if(!(istype(usr, /mob/living/silicon)) && locked)
-		return "<html><head><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><title>[src]</title></head><body>[return_status()]<hr><i>(Swipe ID card to unlock interface)</i></body></html>"
+		return "<html><head><title>[src]</title></head><body>[return_status()]<hr><i>(Swipe ID card to unlock interface)</i></body></html>"
 	else
-		return "<html><head><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><title>[src]</title></head><body>[return_status()]<hr>[return_controls()]</body></html>"
+		return "<html><head><title>[src]</title></head><body>[return_status()]<hr>[return_controls()]</body></html>"
 
 /obj/machinery/alarm/proc/return_status()
 	var/turf/location = src.loc
@@ -665,7 +665,7 @@ table tr:first-child th:first-child { border: none;}
 			d2 = text("<A href='?src=\ref[];time=1'>Initiate Time Lock</A>", src)
 		var/second = src.time % 60
 		var/minute = (src.time - second) / 60
-		var/dat = text("<HTML><HEAD><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /></HEAD><BODY><TT><B>Fire alarm</B> []\n<HR>\nTimer System: []<BR>\nTime Left: [][] <A href='?src=\ref[];tp=-30'>-</A> <A href='?src=\ref[];tp=-1'>-</A> <A href='?src=\ref[];tp=1'>+</A> <A href='?src=\ref[];tp=30'>+</A>\n</TT></BODY></HTML>", d1, d2, (minute ? text("[]:", minute) : null), second, src, src, src, src)
+		var/dat = text("<HTML><HEAD></HEAD><BODY><TT><B>Fire alarm</B> []\n<HR>\nTimer System: []<BR>\nTime Left: [][] <A href='?src=\ref[];tp=-30'>-</A> <A href='?src=\ref[];tp=-1'>-</A> <A href='?src=\ref[];tp=1'>+</A> <A href='?src=\ref[];tp=30'>+</A>\n</TT></BODY></HTML>", d1, d2, (minute ? text("[]:", minute) : null), second, src, src, src, src)
 		user << browse(dat, "window=firealarm")
 		onclose(user, "firealarm")
 	else
@@ -680,7 +680,7 @@ table tr:first-child th:first-child { border: none;}
 			d2 = text("<A href='?src=\ref[];time=1'>[]</A>", src, stars("Initiate Time Lock"))
 		var/second = src.time % 60
 		var/minute = (src.time - second) / 60
-		var/dat = text("<HTML><HEAD><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /></HEAD><BODY><TT><B>[]</B> []\n<HR>\nTimer System: []<BR>\nTime Left: [][] <A href='?src=\ref[];tp=-30'>-</A> <A href='?src=\ref[];tp=-1'>-</A> <A href='?src=\ref[];tp=1'>+</A> <A href='?src=\ref[];tp=30'>+</A>\n</TT></BODY></HTML>", stars("Fire alarm"), d1, d2, (minute ? text("[]:", minute) : null), second, src, src, src, src)
+		var/dat = text("<HTML><HEAD></HEAD><BODY><TT><B>[]</B> []\n<HR>\nTimer System: []<BR>\nTime Left: [][] <A href='?src=\ref[];tp=-30'>-</A> <A href='?src=\ref[];tp=-1'>-</A> <A href='?src=\ref[];tp=1'>+</A> <A href='?src=\ref[];tp=30'>+</A>\n</TT></BODY></HTML>", stars("Fire alarm"), d1, d2, (minute ? text("[]:", minute) : null), second, src, src, src, src)
 		user << browse(dat, "window=firealarm")
 		onclose(user, "firealarm")
 	return
@@ -777,7 +777,7 @@ table tr:first-child th:first-child { border: none;}
 			d2 = text("<A href='?src=\ref[];time=1'>Initiate Time Lock</A>", src)
 		var/second = src.time % 60
 		var/minute = (src.time - second) / 60
-		var/dat = text("<HTML><HEAD><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /></HEAD><BODY><TT><B>Party Button</B> []\n<HR>\nTimer System: []<BR>\nTime Left: [][] <A href='?src=\ref[];tp=-30'>-</A> <A href='?src=\ref[];tp=-1'>-</A> <A href='?src=\ref[];tp=1'>+</A> <A href='?src=\ref[];tp=30'>+</A>\n</TT></BODY></HTML>", d1, d2, (minute ? text("[]:", minute) : null), second, src, src, src, src)
+		var/dat = text("<HTML><HEAD></HEAD><BODY><TT><B>Party Button</B> []\n<HR>\nTimer System: []<BR>\nTime Left: [][] <A href='?src=\ref[];tp=-30'>-</A> <A href='?src=\ref[];tp=-1'>-</A> <A href='?src=\ref[];tp=1'>+</A> <A href='?src=\ref[];tp=30'>+</A>\n</TT></BODY></HTML>", d1, d2, (minute ? text("[]:", minute) : null), second, src, src, src, src)
 		user << browse(dat, "window=partyalarm")
 		onclose(user, "partyalarm")
 	else
@@ -792,7 +792,7 @@ table tr:first-child th:first-child { border: none;}
 			d2 = text("<A href='?src=\ref[];time=1'>[]</A>", src, stars("Initiate Time Lock"))
 		var/second = src.time % 60
 		var/minute = (src.time - second) / 60
-		var/dat = text("<HTML><HEAD><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /></HEAD><BODY><TT><B>[]</B> []\n<HR>\nTimer System: []<BR>\nTime Left: [][] <A href='?src=\ref[];tp=-30'>-</A> <A href='?src=\ref[];tp=-1'>-</A> <A href='?src=\ref[];tp=1'>+</A> <A href='?src=\ref[];tp=30'>+</A>\n</TT></BODY></HTML>", stars("Party Button"), d1, d2, (minute ? text("[]:", minute) : null), second, src, src, src, src)
+		var/dat = text("<HTML><HEAD></HEAD><BODY><TT><B>[]</B> []\n<HR>\nTimer System: []<BR>\nTime Left: [][] <A href='?src=\ref[];tp=-30'>-</A> <A href='?src=\ref[];tp=-1'>-</A> <A href='?src=\ref[];tp=1'>+</A> <A href='?src=\ref[];tp=30'>+</A>\n</TT></BODY></HTML>", stars("Party Button"), d1, d2, (minute ? text("[]:", minute) : null), second, src, src, src, src)
 		user << browse(dat, "window=partyalarm")
 		onclose(user, "partyalarm")
 	return

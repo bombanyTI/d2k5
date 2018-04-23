@@ -155,7 +155,7 @@
 			user.machine = null
 			return
 
-		var/dat = "<head><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><title>Waste Disposal Unit</title></head><body><TT><B>Waste Disposal Unit</B><HR>"
+		var/dat = "<head><title>Waste Disposal Unit</title></head><body><TT><B>Waste Disposal Unit</B><HR>"
 
 		if(!ai)  // AI can't pull flush handle
 			if(flush)

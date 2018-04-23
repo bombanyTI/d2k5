@@ -95,7 +95,7 @@
 			dat += "<A href='?src=\ref[src];op=temp;val=5'>+</A><BR>"
 
 			user.machine = src
-			user << browse("<HEAD><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><TITLE>Space Heater Control Panel</TITLE></HEAD><TT>[dat]</TT>", "window=spaceheater")
+			user << browse("<HEAD><TITLE>Space Heater Control Panel</TITLE></HEAD><TT>[dat]</TT>", "window=spaceheater")
 			onclose(user, "spaceheater")
 
 

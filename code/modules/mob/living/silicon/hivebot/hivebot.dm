@@ -293,7 +293,7 @@
 	if(!src.module)
 		src.pick_module()
 		return
-	var/dat = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><HEAD><TITLE>Modules</TITLE><META HTTP-EQUIV='Refresh' CONTENT='10'></HEAD><BODY>\n"
+	var/dat = "<HEAD><TITLE>Modules</TITLE><META HTTP-EQUIV='Refresh' CONTENT='10'></HEAD><BODY>\n"
 	dat += {"<A HREF='?src=\ref[src];mach_close=robotmod'>Close</A>
 	<BR>
 	<BR>
@@ -409,7 +409,7 @@
 
 /mob/living/silicon/hivebot/proc/radio_menu()
 	var/dat = {"
-<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' />
+
 <TT>
 Microphone: [src.radio.broadcasting ? "<A href='byond://?src=\ref[src.radio];talk=0'>Engaged</A>" : "<A href='byond://?src=\ref[src.radio];talk=1'>Disengaged</A>"]<BR>
 Speaker: [src.radio.listening ? "<A href='byond://?src=\ref[src.radio];listen=0'>Engaged</A>" : "<A href='byond://?src=\ref[src.radio];listen=1'>Disengaged</A>"]<BR>

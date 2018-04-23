@@ -687,7 +687,7 @@ obj/machinery/artifact_analyser
 	attack_hand(var/mob/user as mob)
 		user.machine = src
 		if (!src.working)
-			var/dat = {"<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><B>Artifact Analyser</B><BR>
+			var/dat = {"<B>Artifact Analyser</B><BR>
 			<HR><BR>
 			<B>Artifact Origin:</B> [aorigin] ([accuO]%)<BR>
 			<B>Activation Trigger:</B> [atrigger] ([accuT]%)<BR>

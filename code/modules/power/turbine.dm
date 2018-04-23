@@ -168,7 +168,7 @@
 
 	user.machine = src
 
-	var/t = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><TT><B>Gas Turbine Generator</B><HR><PRE>"
+	var/t = "<TT><B>Gas Turbine Generator</B><HR><PRE>"
 
 	t += "Generated power : [round(lastgen)] W<BR><BR>"
 

@@ -647,7 +647,7 @@
 				user << browse(null, "window=apc")
 				return
 	if(wiresexposed && (!istype(user, /mob/living/silicon)))
-		var/t1 = text("<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><html><head><title>[area.name] APC wires</title></head><body><B>Access Panel</B><br>\n")
+		var/t1 = text("<html><head><title>[area.name] APC wires</title></head><body><B>Access Panel</B><br>\n")
 		var/list/apcwires = list(
 			"Orange" = 1,
 			"Dark red" = 2,
@@ -669,7 +669,7 @@
 		onclose(user, "apcwires")
 
 	user.machine = src
-	var/t = "<html><head><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><title>[area.name] APC</title></head><body><TT><B>Area Power Controller</B> ([area.name])<HR>"
+	var/t = "<html><head><title>[area.name] APC</title></head><body><TT><B>Area Power Controller</B> ([area.name])<HR>"
 
 	if(locked && (!istype(user, /mob/living/silicon)))
 		t += "<I>(Swipe ID card to unlock inteface.)</I><BR>"

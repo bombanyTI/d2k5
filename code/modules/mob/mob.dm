@@ -334,7 +334,7 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 /atom/proc/relaymove()
 	return
 
-/obj/item/weapon/grab/proc/throw()
+/obj/item/weapon/grab/proc/Throw()
 	if(affecting)
 		var/grabee = affecting
 		spawn(0)

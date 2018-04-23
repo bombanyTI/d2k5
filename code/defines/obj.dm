@@ -970,7 +970,7 @@
 	if (!( istype(user, /mob/living/carbon/human) ))
 		return
 	user.machine = src
-	var/dat = {"<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><TT>
+	var/dat = {"<TT>
 <A href='?src=\ref[src];power=1'>Turn [src.on ? "Off" : "On"]</A><BR>
 Frequency:
 <A href='byond://?src=\ref[src];freq=-10'>-</A>

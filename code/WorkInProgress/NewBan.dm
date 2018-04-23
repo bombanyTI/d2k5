@@ -176,7 +176,7 @@ var/savefile/Banlist
 	for (var/A in Banlist.dir)
 		count++
 		Banlist.cd = "/base/[A]"
-		dat += text("<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><tr><td><A href='?src=\ref[src];unbanf=[Banlist["key"]][Banlist["id"]]'>(U)</A><A href='?src=\ref[src];unbane=[Banlist["key"]][Banlist["id"]]'>(E)</A> Key: <B>[Banlist["key"]]</B> ([Banlist["id"]])</td><td> ([Banlist["temp"] ? "[GetExp(Banlist["minutes"]) ? GetExp(Banlist["minutes"]) : "Removal pending" ]" : "Permaban"])</td><td>(By: [Banlist["bannedby"]])</td><td>(Reason: [Banlist["reason"]])</td></tr>")
+		dat += text("<tr><td><A href='?src=\ref[src];unbanf=[Banlist["key"]][Banlist["id"]]'>(U)</A><A href='?src=\ref[src];unbane=[Banlist["key"]][Banlist["id"]]'>(E)</A> Key: <B>[Banlist["key"]]</B> ([Banlist["id"]])</td><td> ([Banlist["temp"] ? "[GetExp(Banlist["minutes"]) ? GetExp(Banlist["minutes"]) : "Removal pending" ]" : "Permaban"])</td><td>(By: [Banlist["bannedby"]])</td><td>(Reason: [Banlist["reason"]])</td></tr>")
 
 	dat += "</table>"
 	dat = "<HR><B>Bans:</B> <FONT COLOR=blue>(U) = Unban , (E) = Edit Ban</FONT> - <FONT COLOR=green>([count] Bans)</FONT><HR><table border=1 rules=all frame=void cellspacing=0 cellpadding=3 >[dat]"

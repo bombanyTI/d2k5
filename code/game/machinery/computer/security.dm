@@ -76,7 +76,7 @@
 				else
 		else
 			dat += text("<A href='?src=\ref[];choice=Log In'>{Log In}</A>", src)
-	user << browse(text("<HEAD><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><TITLE>Security Records</TITLE></HEAD><TT>[]</TT>", dat), "window=secure_rec")
+	user << browse(text("<HEAD><TITLE>Security Records</TITLE></HEAD><TT>[]</TT>", dat), "window=secure_rec")
 	onclose(user, "secure_rec")
 	return
 

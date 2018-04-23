@@ -211,11 +211,11 @@ obj/machinery/body_scanconsole/New()
 	var/dat
 	var/mob/occupant = src.connected.occupant
 	if (istype(occupant,/mob/living/carbon/monkey))
-		dat = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><font color='red'>This device can only scan human occupants.</FONT><BR>"
+		dat = "<font color='red'>This device can only scan human occupants.</FONT><BR>"
 		user << browse(dat, "window=scannernew;size=550x625")
 		return
 	else if (!istype(occupant,/mob/living/carbon/human))
-		dat = "<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><font color='red'>This device can only scan human occupants.</FONT><BR>"
+		dat = "<font color='red'>This device can only scan human occupants.</FONT><BR>"
 		user << browse(dat, "window=scannernew;size=550x625")
 	else
 		return src.scan(src.connected.occupant, user)

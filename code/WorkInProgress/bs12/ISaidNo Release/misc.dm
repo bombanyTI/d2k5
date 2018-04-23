@@ -26,7 +26,7 @@
 	attack_hand(var/mob/user as mob)
 		user.machine = src
 		if (!src.scan)
-			var/dat = {"<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><B>Slot Machine</B><BR>
+			var/dat = {"<B>Slot Machine</B><BR>
 			<HR><BR>
 			<B>Please insert card!</B><BR>"}
 			user << browse(dat, "window=slotmachine;size=450x500")
@@ -38,7 +38,7 @@
 			user << browse(dat, "window=slotmachine;size=450x500")
 			onclose(user, "slotmachine")
 		else
-			var/dat = {"<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><B>Slot Machine</B><BR>
+			var/dat = {"<B>Slot Machine</B><BR>
 			<HR><BR>
 			Five credits to play!<BR>
 			<B>Prize Money Available:</B> [src.scan.money]<BR>

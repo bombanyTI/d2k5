@@ -405,7 +405,7 @@ datum/preferences
 
 		var/list/destructive = assistant_occupations.Copy()
 		var/dat = "<html><body>"
-		dat += "<head><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><style type=\"text/css\">"
+		dat += "<head><style type=\"text/css\">"
 		dat += "body, table{font-family: Tahoma; font-size: 10pt;}"
 		dat += "table {"
 		dat += "border-width: 0px;"
@@ -523,7 +523,7 @@ datum/preferences
 
 	proc/SetChoices(mob/user, occ=1)
 		var/HTML = "<html><body>"
-		HTML += "<head><link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><style type=\"text/css\">"
+		HTML += "<head><style type=\"text/css\">"
 		HTML += "body, table{font-family: Tahoma; font-size: 10pt;}"
 		HTML += "table {"
 		HTML += "border-width: 1px;"

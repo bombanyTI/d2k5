@@ -69,7 +69,7 @@
 
 												// Declaring a doctype is necessary to enable BYOND's crappy browser's more advanced CSS functionality
 	dat = {"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
-			<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' />
+
 			<html>
 			<head>
 				<style type=\"text/css\">

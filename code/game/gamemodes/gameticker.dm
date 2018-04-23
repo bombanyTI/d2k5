@@ -545,7 +545,7 @@ var/global/datum/controller/gameticker/ticker
 			else nukedpenalty = 10000
 			break
 		if (!diskdat) diskdat = "Uh oh. Something has fucked up! Report this."
-		dat += {"<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><B><U>MODE STATS</U></B><BR>
+		dat += {"<B><U>MODE STATS</U></B><BR>
 		<B>Number of Operatives:</B> [foecount]<BR>
 		<B>Number of Surviving Crew:</B> [crewcount]<BR>
 		<B>Final Location of Nuke:</B> [bombdat]<BR>

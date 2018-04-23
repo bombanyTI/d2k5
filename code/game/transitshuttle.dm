@@ -615,7 +615,7 @@ var/prison_shuttle_timeleft = 0
 	if (src.temp)
 		dat = src.temp
 	else
-		dat += {"<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><BR><B>Prison Shuttle</B><HR>
+		dat += {"<BR><B>Prison Shuttle</B><HR>
 		\nLocation: [prison_shuttle_moving_to_station || prison_shuttle_moving_to_prison ? "Moving to station ([prison_shuttle_timeleft] Secs.)":prison_shuttle_at_station ? "Station":"Dock"]<BR>
 		[prison_shuttle_moving_to_station || prison_shuttle_moving_to_prison ? "\n*Shuttle already called*<BR>\n<BR>":prison_shuttle_at_station ? "\n<A href='?src=\ref[src];sendtodock=1'>Send to Dock</A><BR>\n<BR>":"\n<A href='?src=\ref[src];sendtostation=1'>Send to station</A><BR>\n<BR>"]
 		\n<A href='?src=\ref[user];mach_close=computer'>Close</A>"}
@@ -819,7 +819,7 @@ var/prison_shuttle_timeleft = 0
 	if (src.temp)
 		dat = src.temp
 	else
-		dat += {"<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' /><BR><B>Salvaging Shuttle</B><HR>
+		dat += {"<BR><B>Salvaging Shuttle</B><HR>
 		\nLocation: [derelict_shuttle_moving_to_station || derelict_shuttle_moving_to_derelict ? "Moving to station (Approximately [derelict_shuttle_timeleft] Secs.)":derelict_shuttle_at_station ? "Station":"\[Beacon NT-288\]"]<BR>
 		[derelict_shuttle_moving_to_station || derelict_shuttle_moving_to_derelict ? "\n*Shuttle already called*<BR>\n<BR>":derelict_shuttle_at_station ? "\n<A href='?src=\ref[src];sendtodock=1'>Send to \[Beacon NT-288\]</A><BR>\n<BR>":"\n<A href='?src=\ref[src];sendtostation=1'>Send to station</A><BR>\n<BR>"]
 		\n<A href='?src=\ref[user];mach_close=computer'>Close</A>"}

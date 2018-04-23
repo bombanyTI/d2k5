@@ -22,7 +22,7 @@
 	else
 		t1 = "-------"
 	var/dat = {"
-<link rel='stylesheet' href='http://lemon.d2k5.com/ui.css' />
+
 <TT>
 Speaker: [src.listening ? "<A href='byond://?src=\ref[src];listen=0'>Engaged</A>" : "<A href='byond://?src=\ref[src];listen=1'>Disengaged</A>"]<BR>
 <A href='byond://?src=\ref[src];send=1'>Send Signal</A><BR>
