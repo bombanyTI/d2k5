@@ -274,7 +274,7 @@
 
 			if ((src.blind && src.stat != 2))
 				if ((src.blinded))
-					src.blind.invisibility = 08
+					src.blind.invisibility = 0
 				else
 					src.blind.invisibility = 101
 
